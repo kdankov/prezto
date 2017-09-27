@@ -112,6 +112,14 @@ function editor-info {
     fi
   fi
 
+  if [ $TERM = "xterm-256color" ]; then
+    if [ $KEYMAP = vicmd ]; then
+      echo -ne "\e[2 q"
+    else
+      echo -ne "\e[6 q"
+    fi
+  fi
+
   unset REPLY
   zle zle-reset-prompt
 }
@@ -267,6 +275,7 @@ fi
 
 # Edit command in an external editor emacs style (v is used for visual mode)
 bindkey -M vicmd "$key_info[Control]X$key_info[Control]E" edit-command-line
+bindkey -M viins "$key_info[Control]X$key_info[Control]E" edit-command-line
 
 # Undo/Redo
 bindkey -M vicmd "u" undo
@@ -393,3 +402,13 @@ else
 fi
 
 unset key{,map,_bindings}
+
+
+#
+# Cusom keybinding
+#
+
+# for keymap in 'emacs' 'viins' 'vicmd'; do
+  # bindkey -M "$keymap" "$key_info[Control]K" kill-line
+  # bindkey -M "$keymap" "$key_info[Meta]D" kill-word
+# done
