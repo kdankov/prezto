@@ -326,13 +326,17 @@ bindkey -M vicmd "$key_info[Control]R" redo
 if (( $+widgets[history-incremental-pattern-search-backward] )); then
   bindkey -M vicmd "?" history-incremental-pattern-search-backward
   bindkey -M vicmd "/" history-incremental-pattern-search-forward
+  bindkey -M viins "$key_info[Control]R" history-incremental-pattern-search-backward
 else
   bindkey -M vicmd "?" history-incremental-search-backward
   bindkey -M vicmd "/" history-incremental-search-forward
+  bindkey -M viins "$key_info[Control]R" history-incremental-search-backward
 fi
 
 # Toggle comment at the start of the line.
 bindkey -M vicmd "#" vi-pound-insert
+bindkey -M viins "$key_info[Control]P" up-line-or-history
+bindkey -M viins "$key_info[Control]N" down-line-or-history
 
 #
 # Emacs and Vi Key Bindings
