@@ -111,13 +111,14 @@ function editor-info {
     fi
   fi
 
-  if [ $TERM = "xterm-256color" ]; then
-    if [ $KEYMAP = vicmd ]; then
-      echo -ne "\e[2 q"
-    else
-      echo -ne "\e[6 q"
-    fi
-  fi
+  # Change caret in terminal - unfortunately breaks caret in vim
+  # if [ $TERM = "xterm-256color" ]; then
+  #   if [ $KEYMAP = vicmd ]; then
+  #     echo -ne "\e[2 q"
+  #   else
+  #     echo -ne "\e[6 q"
+  #   fi
+  # fi
 
   unset REPLY
   zle zle-reset-prompt
