@@ -33,6 +33,7 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'spectrum' \
+  'gnu-utility' \
   'utility' \
   'completion' \
   'prompt'
@@ -77,7 +78,7 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 #
 
 # Set the command prefix on non-GNU systems.
-# zstyle ':prezto:module:gnu-utility' prefix 'g'
+zstyle ':prezto:module:gnu-utility' prefix 'g'
 
 #
 # History Substring Search
@@ -224,3 +225,4 @@ zstyle ':prezto:module:terminal:tab-title' format '%.'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 # zstyle ':prezto:module:utility' safe-ops 'yes'
+zstyle ':prezto:module:utility:ls' color 'yes'
