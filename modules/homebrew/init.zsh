@@ -26,6 +26,14 @@ fi
 #
 
 # Homebrew
+alias b='brew'
+alias bi='brew install'
+alias bc='brew cask'
+
+alias bsl='brew services list'
+alias bss='brew services start'
+alias bst='brew services stop'
+
 alias brewc='brew cleanup'
 alias brewC='brew cleanup --force'
 alias brewi='brew install'

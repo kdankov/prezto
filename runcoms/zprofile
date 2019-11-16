@@ -51,6 +51,15 @@ path=(
 )
 
 #
+# Alias
+#
+
+alias n='npm'
+alias nrw='npm run watch'
+alias nrp='npm run production'
+
+#
+#
 # Less
 #
 
