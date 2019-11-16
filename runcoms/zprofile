@@ -58,6 +58,15 @@ alias n='npm'
 alias nrw='npm run watch'
 alias nrp='npm run production'
 
+
+#
+# Custom Shortcuts
+#
+
+function gitpull() { echo "git pull"; git pull; zle reset-prompt; zle redisplay}
+zle -N gitpull
+bindkey '^[gp' gitpull
+
 #
 #
 # Less
