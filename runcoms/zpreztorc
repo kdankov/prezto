@@ -57,28 +57,6 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 # Auto convert .... to ../..
 zstyle ':prezto:module:editor' dot-expansion 'yes'
 
-
-#
-# Path
-#
-
-# Homebrew
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-
-# Mysql
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-
-# PHP Composer
-export PATH=$PATH:~/.composer/vendor/bin
-
-# My Dotfiles scripts
-export PATH=$PATH:~/.dotfiles/bin
-
-# My Dotfiles scripts
-export NVM_DIR=~/.nvm
-
-
 #
 # Alias
 #
