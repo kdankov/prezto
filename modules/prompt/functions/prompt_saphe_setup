@@ -47,8 +47,8 @@ function prompt_saphe_setup {
 
   # Define prompts.
   PROMPT='
-%B%F{green}%n%f%b@%F{yellow}%m%f %B${_prompt_saphe_pwd}%b ${editor_info[keymap]} ${vcs_info_msg_0_}
-%F{blue}$%f '
+%B%F{green}%n%f%b %B${_prompt_saphe_pwd}%b ${editor_info[keymap]} ${vcs_info_msg_0_}
+%F{blue}▸%f '
   RPROMPT='%F{blue}[%F{green}%D{%H:%M:%S}%F{blue}]%f'
   SPROMPT='zsh: correct %F{magenta}%R%f to %F{green}%r%f [nyae]? '
 }
