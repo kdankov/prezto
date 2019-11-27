@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 export PAGER='less'
 
 #
@@ -45,6 +45,8 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   /usr/local/opt/mysql@5.7/bin
+  /usr/local/bin/node
+  /usr/local/bin/npm
   ~/.composer/vendor/bin
   ~/.dotfiles/bin
   $path
@@ -53,6 +55,8 @@ path=(
 #
 # Alias
 #
+
+alias nv='nvim'
 
 alias n='npm'
 alias nrw='npm run watch'

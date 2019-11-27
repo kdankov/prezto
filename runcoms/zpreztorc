@@ -40,6 +40,7 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'homebrew' \
   'tmux' \
+  'node' \
   'prompt'
 
 #
